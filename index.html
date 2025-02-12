@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Is Jimmy Dumb?</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+      margin: 0;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #response {
+      margin-top: 20px;
+      font-size: 1.5rem;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Is Jimmy dumb?</h1>
+  <button id="findOutButton">Find Out</button>
+  <p id="response"></p>
+
+  <script>
+    document.getElementById('findOutButton').addEventListener('click', function() {
+      document.getElementById('response').textContent = 'Yes Jimmy, you are dumb lol';
+    });
+  </script>
+</body>
+</html>
